@@ -19,6 +19,12 @@ $(document).ready(function () {
     checks.forEach((checkbox) => {
       $(checkbox).prop("checked", opt);
     });
+    /*Exemplo de codigo para tratar respostas */
+    // if(opt){
+    //     $('strong.quantidade').html(checks.length)
+    //   }else{
+    //     $('strong.quantidade').html(0)
+    //   }
   });
   $("body").on("change", ".check", function () {
     var opt = $(this).prop("checked");
