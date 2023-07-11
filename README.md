@@ -1,4 +1,4 @@
-# Check all rows - Usage
+# Selecionar Todas as Checkboxs - Modo de Uso
 Para iniciar é bem simples basta selecioar a classe do seu input[type=checkbox] que irar gerir todos os outros
 ```HTML
 <input type="checkbox" class="check-all" id="">
