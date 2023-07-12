@@ -1,16 +1,15 @@
-# Selecionar Todas as Checkboxs - Modo de Uso
-Para iniciar é bem simples basta selecioar a classe do seu input[type=checkbox] que irar gerir todos os outros
+# Select all the Checkboxs - how to use
+To start is quite simple, just select the input class [type=checkbox] which will create all the others
 ```HTML
 <input type="checkbox" class="check-all" id="">
 ```
-No seu html defina a classe check-all
-### No arquivo check-rows.js
+On your html define the class check-all### No arquivo check-rows.js
 ```js
 $("body").on("change", ".check-all", function () {})
 ```
-E com essa classe você ira definir o evento que sera ativado, e selecionara todos os outros checkbox, ou remover todas as seleçõe
+With this class you will define the event that will be activated, and will select all the other checkbox’s, or remove all the sections 
 
- Para definir o que vão ser selcionados primeiramente deve-se definir sua classe no HTML
+To define what will be selected first you must define its class on the HTML 
 ```HTML
 <input type="checkbox" class="check" id="">
 ```
@@ -18,8 +17,8 @@ E com essa classe você ira definir o evento que sera ativado, e selecionara tod
 ```js
 var checks = document.querySelectorAll(".check");
     checks.forEach((checkbox) => {
-      $(checkbox).prop("checked", opt);
+      $(checkbox).prop("checked", true);
     });
 ```
-Solicitações pull são bem-vindas. Para mudanças importantes, abra um problema primeiro
-para discutir o que você gostaria de mudar.
+
+Solicitations pull are welcome. To important changes, open a problem first to discuss what you would like to change.
